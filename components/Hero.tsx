@@ -8,7 +8,7 @@ export const Hero: React.FC = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("/malu-bg.PNG")',
+          backgroundImage: `url("${import.meta.env.BASE_URL}malu-bg.PNG")`,
           backgroundPosition: 'center calc(50% + 25px)',
         }}
       >

@@ -18,7 +18,7 @@ export const Navbar: React.FC = () => {
     { name: 'Sobre', href: '#sobre' },
     { name: 'Teatro', href: '#teatro' },
     { name: 'Dança', href: '#danca' },
-    { name: 'Vídeos', href: '#monologos' },
+    { name: 'Monólogos', href: '#monologos' },
     { name: 'Fotos', href: '#galeria' },
     { name: 'Contato', href: '#contato' },
   ];
@@ -45,8 +45,8 @@ export const Navbar: React.FC = () => {
                 key={link.name}
                 href={link.href}
                 className={`px-4 py-2 rounded-full text-sm font-bold transition-all duration-300 ${scrolled
-                    ? 'text-gray-600 hover:bg-pinky-100 hover:text-pinky-600'
-                    : 'text-white/90 hover:bg-white/20 hover:text-white'
+                  ? 'text-gray-600 hover:bg-pinky-100 hover:text-pinky-600'
+                  : 'text-white/90 hover:bg-white/20 hover:text-white'
                   }`}
               >
                 {link.name}
