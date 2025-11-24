@@ -8,8 +8,8 @@ export const THEATRE_CREDITS: Play[] = [
     role: 'Marta Von Trapp',
     director: 'Charles Möeller e Claudio Botelho',
     videoPlaceholderId: 101,
-    videoSrc: '/Videos/no_palco/vid-novica.MP4',
-    thumbnailSrc: '/thumbnail/peca/thumb-novica.JPG',
+    videoSrc: `${import.meta.env.BASE_URL}Videos/no_palco/vid-novica.MP4`,
+    thumbnailSrc: `${import.meta.env.BASE_URL}thumbnail/peca/thumb-novica.JPG`,
   },
   {
     id: 'baba-quase-perfeita',
