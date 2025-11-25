@@ -3,13 +3,12 @@ import { ArrowDown, Star } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative h-screen w-full overflow-hidden bg-pinky-400">
+    <section id="home" className="relative h-screen w-full overflow-hidden bg-gray-900">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-center md:bg-[center_calc(50%_+_25px)]"
         style={{
           backgroundImage: `url("${import.meta.env.BASE_URL}malu-bg.PNG")`,
-          backgroundPosition: 'center calc(50% + 25px)',
         }}
       >
         <div className="absolute inset-0 bg-pinky-500/40 mix-blend-overlay"></div>
