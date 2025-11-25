@@ -36,9 +36,6 @@ export const Theatre: React.FC = () => {
                 <div className="inline-block bg-white px-4 py-1 rounded-full text-sm font-bold text-lilac-500 mb-2 shadow-sm">
                   {play.role}
                 </div>
-                <p className="text-gray-600 text-sm leading-relaxed mb-2 font-medium">
-                  {play.details || `Uma experiência mágica!`}
-                </p>
                 <p className="text-xs uppercase tracking-widest text-pinky-400 font-bold">
                   Dir. {play.director}
                 </p>
