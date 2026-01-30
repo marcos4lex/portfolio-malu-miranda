@@ -8,11 +8,9 @@ export const Hero: React.FC = () => {
       <div
         className="absolute inset-0 bg-cover bg-no-repeat bg-center md:bg-[center_calc(50%_+_25px)]"
         style={{
-          backgroundImage: `url("${import.meta.env.BASE_URL}malu-bg.PNG")`,
+          backgroundImage: `url("${import.meta.env.BASE_URL}malu-bg1.png")`,
         }}
       >
-        <div className="absolute inset-0 bg-pinky-500/40 mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-pinky-500/20 to-pinky-50"></div>
       </div>
 
       {/* Playful Shapes Overlay */}
@@ -24,7 +22,7 @@ export const Hero: React.FC = () => {
       </div>
       <div className="absolute top-1/2 right-10 w-32 h-32 bg-yellow-300/20 rounded-full blur-2xl animate-pulse"></div>
 
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 mt-10">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 mt-32 md:mt-10">
         <div className="bg-white/20 backdrop-blur-sm p-2 rounded-full px-6 mb-6 border border-white/30 animate-fade-in-up">
           <span className="text-white font-bold tracking-widest text-sm uppercase">
             Atriz • Bailarina • Sonhadora
