@@ -30,7 +30,7 @@ export const Contact: React.FC = () => {
                   <div className="w-10 h-10 bg-pinky-100 rounded-full flex items-center justify-center text-pinky-500 group-hover:bg-pinky-500 group-hover:text-white transition-colors">
                     <Mail size={18} />
                   </div>
-                  <span className="font-bold text-sm">contato@malumiranda.com.br</span>
+                  <a href="mailto:amalu.2905@gmail.com" target="_blank" className="font-bold text-sm">amalu.2905@gmail.com</a>
                 </div>
 
                 <div className="flex gap-4 pt-4">
