@@ -47,20 +47,18 @@ export const DANCE_VIDEOS: VideoItem[] = [
   {
     id: 'ballet-01',
     title: 'Ballet Clássico',
-    category: 'Dance',
-    description: 'Ballet com leveza, força e muita sensibilidade.',
+    category: 'Dança',
     videoPlaceholderId: 201,
-    videoSrc: `${import.meta.env.BASE_URL}Videos/ballet.MP4`,
-    thumbnailSrc: `${import.meta.env.BASE_URL}thumbnail/thumb-ballet.PNG`,
+    videoSrc: `${import.meta.env.BASE_URL}Videos/sapateado1.mp4`,
+    thumbnailSrc: `${import.meta.env.BASE_URL}thumbnail/sapateado1.png`,
   },
   {
     id: 'tap-01',
     title: 'Sapateado',
-    category: 'Dance',
-    description: 'Sapateado com técnica, presença e muita alegria.',
+    category: 'Dança',
     videoPlaceholderId: 202,
-    videoSrc: `${import.meta.env.BASE_URL}Videos/sapateado.MP4`,
-    thumbnailSrc: `${import.meta.env.BASE_URL}thumbnail/thumb-sapateado.PNG`,
+    videoSrc: `${import.meta.env.BASE_URL}Videos/sapateado2.mp4`,
+    thumbnailSrc: `${import.meta.env.BASE_URL}thumbnail/sapateado2.png`,
   },
 ];
 
