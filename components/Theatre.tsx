@@ -20,7 +20,7 @@ export const Theatre: React.FC = () => {
           className={`grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 fade-in-section ${isVisible ? 'is-visible' : ''}`}
         >
           {THEATRE_CREDITS.map((play) => (
-            <div key={play.id} className="flex flex-col group bg-pinky-50 rounded-3xl p-6 border-2 border-transparent hover:border-pinky-200 transition-colors">
+            <div key={play.id} className="flex flex-col group bg-pinky-50 rounded-3xl p-6 border-2 border-transparent hover:border-pinky-200 transition-colors w-full md:w-[70%] mx-auto">
               <div className="mb-6 -mt-12 mx-auto w-full">
                 <VideoCard
                   title={play.title}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { Play } from 'lucide-react';
 
 interface VideoCardProps {
@@ -13,18 +13,41 @@ interface VideoCardProps {
 
 export const VideoCard: React.FC<VideoCardProps> = ({ title, subtitle, imageId, aspectRatio = 'video', videoSrc, thumbnailSrc, objectPosition }) => {
   const aspectRatioClass = aspectRatio === 'video' ? 'aspect-video' : aspectRatio === 'square' ? 'aspect-[4/5]' : aspectRatio;
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
 
   return (
     <div className="group relative cursor-pointer block transform hover:-translate-y-2 transition-transform duration-300">
       <div className={`relative w-full ${aspectRatioClass} overflow-hidden rounded-3xl shadow-xl shadow-pinky-200 border-4 border-white`}>
         {videoSrc ? (
-          <video
-            src={videoSrc}
-            className="w-full h-full object-cover"
-            style={objectPosition ? { objectPosition } : undefined}
-            controls
-            poster={thumbnailSrc || `https://picsum.photos/800/450?random=${imageId}`}
-          />
+          <div className="relative w-full h-full">
+            <video
+              ref={videoRef}
+              src={videoSrc}
+              className="w-full h-full object-cover"
+              style={objectPosition ? { objectPosition } : undefined}
+              controls={true}
+              onPlay={() => setIsPlaying(true)}
+              poster={thumbnailSrc || `https://picsum.photos/800/450?random=${imageId}`}
+            />
+            {!isPlaying && (
+              <div
+                className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors duration-300 z-10"
+                onClick={handlePlay}
+              >
+                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/90 text-pinky-500 shadow-xl flex items-center justify-center pl-1 transform scale-90 opacity-90 group-hover:scale-110 group-hover:opacity-100 transition-all duration-300">
+                  <Play size={32} fill="currentColor" />
+                </div>
+              </div>
+            )}
+          </div>
         ) : (
           <>
             <img

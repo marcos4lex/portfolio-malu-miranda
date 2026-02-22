@@ -17,19 +17,21 @@ export const Dance: React.FC = () => {
 
         <div
           ref={ref}
-          className={`grid grid-cols-1 md:grid-cols-2 gap-12 fade-in-section ${isVisible ? 'is-visible' : ''}`}
+          className={`grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 fade-in-section ${isVisible ? 'is-visible' : ''}`}
         >
           {DANCE_VIDEOS.map((video) => (
-            <div key={video.id} className="bg-white p-6 rounded-3xl shadow-lg transform hover:-rotate-1 transition-transform max-w-[600px] mx-auto w-full">
-              <VideoCard
-                title={video.title}
-                imageId={video.videoPlaceholderId}
-                subtitle={video.category}
-                videoSrc={video.videoSrc}
-                thumbnailSrc={video.thumbnailSrc}
-                aspectRatio="aspect-[9/14]"
-              />
-              <p className="mt-4 text-center text-gray-500 font-bold text-lg">{video.description}</p>
+            <div key={video.id} className="bg-white p-6 rounded-3xl shadow-lg transform hover:-rotate-1 transition-transform mx-auto w-full md:w-[68%] flex flex-col">
+              <div className="mb-6 -mt-12 mx-auto w-full">
+                <VideoCard
+                  title={video.title}
+                  imageId={video.videoPlaceholderId}
+                  subtitle={video.category}
+                  videoSrc={video.videoSrc}
+                  thumbnailSrc={video.thumbnailSrc}
+                  aspectRatio="aspect-[10/14]"
+                />
+              </div>
+              <p className="mt-auto text-center text-gray-500 font-bold text-lg">{video.description}</p>
             </div>
           ))}
         </div>
