@@ -40,16 +40,16 @@ export const Contact: React.FC = () => {
 
               <div className="space-y-6">
                 <div className="flex gap-4 pt-4">
-                  <a href="mailto:amalu.2905@gmail.com" target="_blank" className="w-12 h-12 bg-pinky-100 rounded-full flex items-center justify-center text-pinky-500 hover:bg-pinky-500 hover:text-white transition-all hover:scale-110">
+                  <a href="mailto:amalu.2905@gmail.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-pinky-100 rounded-full flex items-center justify-center text-pinky-500 hover:bg-pinky-500 hover:text-white transition-all hover:scale-110">
                     <Mail size={24} />
                   </a>
-                  <a href="https://www.instagram.com/malu.miranda" target="_blank" className="w-12 h-12 bg-pinky-100 rounded-full flex items-center justify-center text-pinky-500 hover:bg-pinky-500 hover:text-white transition-all hover:scale-110">
+                  <a href="https://www.instagram.com/malu.miranda" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-pinky-100 rounded-full flex items-center justify-center text-pinky-500 hover:bg-pinky-500 hover:text-white transition-all hover:scale-110">
                     <Instagram />
                   </a>
-                  <a href="https://www.youtube.com/@amalu.miranda" target="_blank" className="w-12 h-12 bg-pinky-100 rounded-full flex items-center justify-center text-pinky-500 hover:bg-pinky-500 hover:text-white transition-all hover:scale-110">
+                  <a href="https://www.youtube.com/@amalu.miranda" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-pinky-100 rounded-full flex items-center justify-center text-pinky-500 hover:bg-pinky-500 hover:text-white transition-all hover:scale-110">
                     <Youtube />
                   </a>
-                  <a href="https://wa.me/+5521981810505" target="_blank" className="w-12 h-12 bg-pinky-100 rounded-full flex items-center justify-center text-pinky-500 hover:bg-pinky-500 hover:text-white transition-all hover:scale-110">
+                  <a href="https://wa.me/+5521981810505" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-pinky-100 rounded-full flex items-center justify-center text-pinky-500 hover:bg-pinky-500 hover:text-white transition-all hover:scale-110">
                     <Whatsapp />
                   </a>
                 </div>

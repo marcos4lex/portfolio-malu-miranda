@@ -24,6 +24,7 @@ export const About: React.FC = () => {
                 src={`${import.meta.env.BASE_URL}Book/book-img6.JPEG`}
                 alt="Malu Miranda Portrait"
                 className="relative z-10 w-80 md:w-96 h-auto rounded-[2rem] border-4 border-white shadow-xl object-cover aspect-[3/4] transform hover:rotate-2 transition-transform duration-500"
+                loading="lazy"
               />
             </div>
           </div>
